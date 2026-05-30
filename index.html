@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Search</title>
+
+  <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-DcHCnVjq.js">
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/vendor-DumFYO8Z.css">
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-xU3xrKNf.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+      <form class="form">
+        <input class="search-input" type="text" name="searchText" placeholder="Search images..." autocomplete="off" />
+
+        <button class="search-btn" type="submit">
+          Search
+        </button>
+      </form>
+
+      <ul class="gallery"></ul>
+
+      <button class="load-more" type="button">
+        Load more
+      </button>
+
+      <div class="loader">
+        <p class="loader-text">Loading images...</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
