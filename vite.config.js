@@ -6,12 +6,12 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    base: command === 'build' ? '/goit-js-hw-12/' : '/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
     build: {
-      base: '/goit-js-hw-12/',
       sourcemap: true,
       rollupOptions: {
         input: glob.sync('./src/*.html'),
